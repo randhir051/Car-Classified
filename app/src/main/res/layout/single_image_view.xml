@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardBackgroundColor="@color/primary_light"
+    card_view:cardCornerRadius="4dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.etsy.android.grid.util.DynamicHeightImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/round_corner"
+            android:id="@+id/imageView" />
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:padding="4dp"-->
+            <!--android:layout_above="@+id/ll"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:id="@+id/ivLike"-->
+            <!--android:src="@drawable/star_gold_" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll"
+            android:orientation="horizontal"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+
+            android:weightSum="10"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555"
+                    android:layout_below="@+id/buildText"
+                    android:text="Name"
+                    android:id="@+id/modelText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555"
+                    android:text="Name"
+                    android:id="@+id/buildText" />
+
+
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/modelText"
+                android:id="@+id/year"
+                android:text="Year : "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555"
+                    android:layout_below="@+id/modelText"
+                    android:layout_toRightOf="@+id/year"
+                    android:layout_toEndOf="@+id/year"
+                    android:text="Name"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/yearText" />
+
+                </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+

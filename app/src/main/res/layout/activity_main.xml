@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid_view"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:background="#EEEEEE"
+        android:layout_height="wrap_content"
+        app:item_margin="2dp"
+        app:column_count_portrait="2"
+        app:column_count_landscape="3"
+        app:grid_paddingLeft="2dp"
+        app:grid_paddingRight="2dp" />
+
+
+</RelativeLayout>

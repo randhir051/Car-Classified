@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cse.dsi.furore.SelfieDetails">
+    <item
+        android:id="@+id/action_report"
+        android:title="Report Image"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>
